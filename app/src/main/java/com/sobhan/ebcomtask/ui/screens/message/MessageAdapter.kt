@@ -106,6 +106,10 @@ class MessageAdapter() : ListAdapter<Message, RecyclerView.ViewHolder>(MessageDi
 
             }
 
+            binding.ivShare.setOnClickListener {
+                onBookmarkClick.onShareMessage(obj)
+            }
+
 
 
             binding.ivBookmark.setOnClickListener {
@@ -116,6 +120,9 @@ class MessageAdapter() : ListAdapter<Message, RecyclerView.ViewHolder>(MessageDi
 
 
         }
+
+
+
 
         @SuppressLint("ClickableViewAccessibility")
         fun View.setOnClick(clickEvent: () -> Unit) {
@@ -182,7 +189,10 @@ class MessageAdapter() : ListAdapter<Message, RecyclerView.ViewHolder>(MessageDi
                     onBookmarkClick.onReadMessage(obj)
 
                 }
+            }
 
+            binding.ivShare.setOnClickListener {
+                onBookmarkClick.onShareMessage(obj)
             }
         }
 
@@ -215,6 +225,7 @@ class MessageAdapter() : ListAdapter<Message, RecyclerView.ViewHolder>(MessageDi
         fun onLongClick()
         fun onSelectMessage(message: Message, isSelected: Boolean)
         fun onReadMessage(message: Message)
+        fun onShareMessage(message: Message)
     }
 
 

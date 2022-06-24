@@ -1,5 +1,6 @@
 package com.sobhan.ebcomtask.ui.screens.message
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -139,6 +140,17 @@ class MessagesFragment : Fragment(), MessageAdapter.MessageAdapterContract {
         )
         messageViewModel.update(savedMessage)
         messageViewModel.decreaseUnreadMessageCount()
+    }
+
+    override fun onShareMessage(message: Message) {
+        val sendIntent: Intent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, message.description)
+            type = "text/plain"
+        }
+
+        val shareIntent = Intent.createChooser(sendIntent, null)
+        startActivity(shareIntent)
     }
 
     private fun showEmptyView() {
