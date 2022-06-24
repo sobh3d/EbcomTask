@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/badge_background.xml" value="0.1455" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/badge_background_color.xml" value="0.1455" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/custom_check_box.xml" value="0.2085" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/ic_circle_down.xml" value="0.1455" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/ic_colored_bookmarc.xml" value="0.1455" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/ic_colored_bookmark.xml" value="0.137" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/ic_share.xml" value="0.1455" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/drawable/tab_indicator.xml" value="0.1455" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/font/font.xml" value="0.26944444444444443" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/layout/ddddd.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/layout/fragment_messages.xml" value="0.22529644268774704" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/layout/fragment_saved_messages.xml" value="0.21621621621621623" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/layout/message_with_image.xml" value="0.1" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/layout/message_without_image.xml" value="0.1760299625468165" />
+        <entry key="..\:/Users/PeykT/AndroidStudioProjects/EbcomTask/app/src/main/res/layout/messages_tab_view.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.25416666666666665" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

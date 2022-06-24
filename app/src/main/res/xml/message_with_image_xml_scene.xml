@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:motionInterpolator="anticipate"
+        motion:duration="300"
+        motion:layoutDuringTransition="ignoreRequest">
+        <OnClick motion:targetId="@+id/ivExpandable"/>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/messageImage"
+            android:layout_width="@dimen/_44sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/tvTitle">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10ssp"
+            motion:layout_constraintBottom_toBottomOf="@id/messageImage"
+            motion:layout_constraintEnd_toStartOf="@id/messageImage"
+            motion:layout_constraintStart_toStartOf="@id/ivShare"
+            motion:layout_constraintTop_toTopOf="@id/messageImage">
+            <CustomAttribute
+                motion:attributeName="singleLine"
+                motion:customBoolean="true"/>
+
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/tvMessageExpireTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/messageImage">
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/messageImage"
+            motion:transitionEasing="decelerate"
+            motion:pathMotionArc="startVertical"
+            motion:layout_constraintBottom_toTopOf="@+id/view">
+
+            <CustomAttribute
+                motion:attributeName="singleLine"
+                motion:customBoolean="false"/>
+
+        </Constraint>
+        <Constraint
+            android:id="@+id/messageImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            motion:layout_constraintTop_toBottomOf="@id/tvTitle"
+           motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/packed">
+        </Constraint>
+        <Constraint android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/border"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/tvDescription"
+            motion:layout_constraintBottom_toTopOf="@+id/tvMessageExpireTimeTitle"
+            android:visibility="visible">
+
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/tvMessageExpireTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/message_expire_time"
+            android:textSize="@dimen/_10ssp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="@id/view"
+            motion:layout_constraintTop_toBottomOf="@id/view">
+
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/ivExpandable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:rotation="180"
+            motion:layout_constraintBottom_toBottomOf="@id/tvMessageExpireTimeTitle"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/view"
+            motion:layout_constraintTop_toTopOf="@id/tvMessageExpireTimeTitle">
+
+        </Constraint>
+
+
+
+    </ConstraintSet>
+</MotionScene>

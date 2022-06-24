@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EbcomTask</string>
+    <string name="my_message">پیام های من</string>
+    <string name="back">back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="public_messages">عمومی</string>
+    <string name="saved_messages">ذخیره شده</string>
+    <string name="bookmark">bookmark</string>
+    <string name="share">share</string>
+    <string name="message_expire_time">اعتبار پیام</string>
+    <string name="expandable">expandable</string>
+
+    <!-- Error Handling -->
+    <string name="error_no_internet">اتصال به اینترنت برقرار نیست</string>
+    <string name="error_server_error">خطای سرور</string>
+    <string name="error_unknown">درخواست شما با مشکل مواجه شد</string>
+    <string name="nodata">NoData</string>
+    <string name="no_data">هیچ پیامی جهت نمایش موجود نیست</string>
+    <string name="remove">حذف</string>
+    <string name="cancel">انصراف</string>
+    <string name="message_image">message_image</string>
+    <string name="_1400_10_24_10_50">1400/10/24 - 10:50</string>
+    <string name="_1400_11_20_15_30">1400/11/20 - 15:30</string>
+
+</resources>
